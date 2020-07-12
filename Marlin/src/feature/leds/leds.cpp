@@ -93,7 +93,7 @@ void LEDLights::set_color(const LEDColor &incol
       }
     #endif
 
-    neo.set_brightness(incol.i);
+    neo.set_brightness(map(incol.i,0,255,0,NEOPIXEL_MAX_BRIGHTNESS));
 
     if (isSequence) {
       neo.set_pixel_color(nextLed, neocolor);
