@@ -2214,6 +2214,7 @@
 #endif
 
 // Support for Adafruit Neopixel LED driver
+// wtf
 #define NEOPIXEL_LED
 #if ENABLED(NEOPIXEL_LED)
   #define NEOPIXEL_TYPE   NEO_GRB // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
